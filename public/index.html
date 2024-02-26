@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-info">
+            <div class="heading-container">
+                <h1 id="location-heading">Today Weather : </h1>
+                <div id="weather-info" class="weather-info-content">
+                    <!-- Weather information will be displayed here -->
+                </div>
+            </div>
+        </div>
+        <div class="location-controls">
+            <form id="location-form" onsubmit="changeLocation(event)">
+                <input type="text" id="location-input" placeholder="Enter location...">
+                <button type="submit">Change Location</button>
+            </form>
+            <div class="refresh-button" onclick="refreshPage()">&#x21bb;</div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 MD MASHOOD ALAM. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
